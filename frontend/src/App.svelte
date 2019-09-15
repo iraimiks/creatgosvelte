@@ -13,7 +13,10 @@
     import Footer from './templates/Footer.svelte'
 </script>
 
-<style lang="scss">
+<style>
+* {
+  box-sizing: border-box;
+}
  :global(*) {
    margin: 0;
    padding: 0;

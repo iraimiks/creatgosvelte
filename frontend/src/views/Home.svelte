@@ -1,4 +1,7 @@
-<h2>Home svelte her</h2>
-<style lang="scss">
+<HomeMain />
+<script>
+    import HomeMain from '../templates/bodyhome/HomeMain.svelte';
+</script>
+<style>
 
 </style>

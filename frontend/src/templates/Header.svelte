@@ -1,21 +1,10 @@
 <div id="header">
-  <div class="topnav">
-        <div>
-            <a class="top-nav-logo">Logo</a>
-            <a class="active" href="/">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="/about">About</a>
-        </div>
-        <div class="topnav-right">
-            <a>
-            <i class="material-icons">
-            shopping_cart
-            </i>
-            <span class="card-info">0</span>
-            </a>
-        </div>
-  </div>
+            <ul class="topnav">
+              <li><a class="active" href="#home">Home</a></li>
+              <li><a href="#news">News</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li class="right"><a href="#about">About</a></li>
+            </ul>
 </div>
 <script>
 
@@ -24,41 +13,34 @@
     #header{
         grid-area: header;
     }
-    .topnav {
+    ul.topnav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
       overflow: hidden;
-      background-color: #131313;
+      background-color: #333;
     }
-    .topnav #myLinks {
-      display: none;
-    }
-    .top-nav-logo{
-        float: left;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-    }
-    .topnav a {
-      float: left;
-      color: #f2f2f2;
+
+    ul.topnav li {float: left;}
+
+    ul.topnav li a {
+      display: block;
+      color: white;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
-      font-size: 17px;
     }
-    .topnav a:hover {
-      background-color: #480012;
-      color: #b7ffb7;
+
+    ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+    ul.topnav li a.active {background-color: #4CAF50;}
+
+    ul.topnav li.right {float: right;}
+
+    @media screen and  (max-width: 600px) {
+      ul.topnav li.right,
+      ul.topnav li {float: none;}
     }
-    .topnav-right {
-     float: right;
-    }
-    .topnav-right a{
-         float: right;
-         padding-top: 10px;
-        }
-    .card-info {
-        padding: 0;
-    }
+
+
 </style>
