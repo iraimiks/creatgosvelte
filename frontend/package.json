@@ -17,7 +17,7 @@
     "svelte-preprocess": "^3.1.0"
   },
   "dependencies": {
-    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-postcss": "^4.0.2",
     "sirv-cli": "^0.4.4",
     "svelte-router-spa": "^2.3.1"
   },
